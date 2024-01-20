@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>Form Pendaftaran Calon Presiden</h2>
+    <form action="">
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama"><br>
+        <label for="alamat">Alamat:</label><br>
+        <input type="text" id="alamat" name="alamat"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="partai">Partai Utama Anda:</label><br>
+        <!-- <input type="text" id="partai" name="partai"><br> -->
+        <select name="partai" id="partai" id="partai">
+            <option value="golkar">Golkar</option>
+            <option value="pdip">PDIP</option>
+            <option value="pks">PKS</option>
+            <option value="nasdem">Nasdem</option>
+            <option value="ppp">PPP</option>
+        </select>
+        <label for="koalisi">Partai k=Koalisi Anda:</label><br>
+        <input type="checkbox">
+        <label for="nasdem">Nasdem</label><br>
+        <input type="checkbox">
+        <label for="demokrat">Demokrat</label><br>
+        <input type="checkbox" name="golkar">
+        <label for="golkar">Golkar</label><br>
+        <input type="checkbox" name="perindo">
+        <label for="perindo">Perindo</label><br><br>
+        <textarea name="pesan" id="pesan cols="30" rows="10"></textarea><br>
+        <button>submit</button>
+        <input type="reset">
+    </form>
+</body>
+</html>

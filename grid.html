@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridCSS</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas: 
+            'header header header header header header'
+            'menu menu main main right right'
+            'menu menu footer footer footer footer';
+            /* grid-template-columns: auto auto auto; bisa juga gunakan ukuran piksel */
+            gap: 50px;
+            /* column-gap: 50px;
+            row-gap: 50px; */
+            background-color: #2196F3;
+            padding: 10px;
+        }
+        .grid-item {
+            background-color: chartreuse;
+            border: 1px solid firebrick;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .item1 {
+            grid-area: header;
+            /* grid-row: 1 / 5; baris ke bawah */
+            /* grid-column: 1 / 3; baris ke kanan */
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+        }
+        .item2 {
+            grid-area: menu;
+        }
+        .item3 {
+            grid-area: main;
+        }
+        .item4 {
+            grid-area: right;
+        }
+        .item5 {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Display Property:</h1>
+    <div class="grid-container">
+        <div class="grid-item item1">Header</div>
+        <div class="grid-item item2">Menu</div>
+        <div class="grid-item item3">Main</div>
+        <div class="grid-item item4">Right</div>
+        <div class="grid-item item5">Footer</div>
+    </div>
+</body>
+</html>
